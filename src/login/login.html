@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./../img/logo.svg"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css" type="application/atom+xml" title="Atom">
+    <title>Login KCHRMARKET</title>
+</head>
+<body>
+  <div className="wrapper">
+    <img src={logo} alt="KCHRMARKET"/>
+    <h1>KCHRMARKET.RU</h1>
+    <form action="login.php" method="post">
+      <label for="username">
+        <h3>Логин</h3>
+      </label>
+      <input className="login" type="text" name="username" id="username" />
+      <label for="password">
+        <h3>Пароль</h3>
+      </label>
+      <input
+        className="login"
+        type="password"
+        name="password"
+        id="password"
+      />
+      <p className="recover">
+        <input type="checkbox" />
+        <label className="remember" for="">
+          Запомнить
+        </label>
+        <a className="a_login" href="">
+          Забыли пароль?
+        </a>
+      </p>
+    </form>
+    <button class="btn">Войти</button>
+    <div class="footer">
+      <a href="">
+        <strong>kchrmarket.ru</strong>
+      </a>
+      <p>© 2021 All Rights Reserved</p>
+      <p> Made with ♥ by kchrmarket</p>
+    </div>
+  </div>
+</body>
+</html>
